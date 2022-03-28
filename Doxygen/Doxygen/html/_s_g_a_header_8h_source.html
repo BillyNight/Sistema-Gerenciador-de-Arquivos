@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SGA: Código-Fonte de SGAHeader.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SGA
+   </div>
+   <div id="projectbrief">Sistema Gerenciador de Arquivos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SGAHeader.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_s_g_a_header_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;ctype.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;locale.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structparte.html">   10</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structparte.html">parte</a>{</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structparte.html#a89b05155f0f251df065b7f85ffd482b4">   11</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structparte.html#a89b05155f0f251df065b7f85ffd482b4">prox</a>; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structparte.html#ab13f950e8e17b3e09f6b2eab5d4f469b">   12</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structparte.html#ab13f950e8e17b3e09f6b2eab5d4f469b">txt</a>[30]; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structparte.html#a737837a1c8550f0319ebb232e3813b38">   13</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structparte.html#a737837a1c8550f0319ebb232e3813b38">nomeAr</a>[20]; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structparte.html#a750b5d744c39a06bfb13e6eb010e35d0">   14</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structparte.html#a750b5d744c39a06bfb13e6eb010e35d0">index</a>; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="_s_g_a_header_8h.html#a9a2fe278fb91f412ec1f155fa7e389cb">   15</a></span>&#160;} <a class="code" href="_s_g_a_header_8h.html#a9a2fe278fb91f412ec1f155fa7e389cb">Parte</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structhisto.html">   20</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structhisto.html">histo</a>{</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structhisto.html#aeb5a293641a5914dcff4a1ca75870431">   21</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structhisto.html#aeb5a293641a5914dcff4a1ca75870431">indice</a>; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structhisto.html#a737837a1c8550f0319ebb232e3813b38">   22</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structhisto.html#a737837a1c8550f0319ebb232e3813b38">nomeAr</a>[20]; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structhisto.html#a6e27f49150e9a14580fb313cc2777e00">   23</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structhisto.html#a6e27f49150e9a14580fb313cc2777e00">status</a>; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="_s_g_a_header_8h.html#aa59f6cf404d3f64b085df5eae7281781">   24</a></span>&#160;} <a class="code" href="_s_g_a_header_8h.html#aa59f6cf404d3f64b085df5eae7281781">Histo</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="_s_g_a_header_8h.html#a08224f9c8c3cf12ddf40cbfc5fe0a568">   30</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_g_a_header_8h.html#a08224f9c8c3cf12ddf40cbfc5fe0a568">zera</a>(<a class="code" href="structhisto.html">Histo</a> * historico, <a class="code" href="structparte.html">Parte</a> * vet){</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="_s_g_a_header_8h.html#a8c2b50801c5f3a8419ea00cec25dd6bb">   43</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_s_g_a_header_8h.html#a8c2b50801c5f3a8419ea00cec25dd6bb">verif</a>(<a class="code" href="structhisto.html">Histo</a> * historico, <span class="keywordtype">int</span> histCount, <span class="keywordtype">char</span> * noArquivo, <span class="keywordtype">int</span> cond){</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="_s_g_a_header_8h.html#abe474b2931ee2935e4b3a9074ad11247">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_g_a_header_8h.html#abe474b2931ee2935e4b3a9074ad11247">insere</a>(<a class="code" href="structhisto.html">Histo</a> * historico, <a class="code" href="structparte.html">Parte</a> * vet, <span class="keywordtype">char</span> * noArquivo, <span class="keywordtype">int</span> posHist, FILE * arq){</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="_s_g_a_header_8h.html#a301aae3c3872a4c0e424d552e1f126a3">   74</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_g_a_header_8h.html#a301aae3c3872a4c0e424d552e1f126a3">busca</a>(<a class="code" href="structhisto.html">Histo</a> * historico, <a class="code" href="structparte.html">Parte</a> * vet, <span class="keywordtype">char</span> * noArquivo, <span class="keywordtype">int</span> histCount){</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="_s_g_a_header_8h.html#a8d27d99d4a1f8f20e75c9acfc8432352">   89</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_g_a_header_8h.html#a8d27d99d4a1f8f20e75c9acfc8432352">remocao</a>(<a class="code" href="structhisto.html">Histo</a> * historico, <a class="code" href="structparte.html">Parte</a> * vet, <span class="keywordtype">char</span> * noArquivo, <span class="keywordtype">int</span> histCount){</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="_s_g_a_header_8h.html#ab6872624832fe3d5c9bae8cf188c1fa4">  101</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_g_a_header_8h.html#ab6872624832fe3d5c9bae8cf188c1fa4">slot</a>(<a class="code" href="structhisto.html">Histo</a> * historico, <span class="keywordtype">int</span> histCount, <span class="keywordtype">int</span> posVet, <a class="code" href="structparte.html">Parte</a> * vet){</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="a_s_g_a_header_8h_html_a8c2b50801c5f3a8419ea00cec25dd6bb"><div class="ttname"><a href="_s_g_a_header_8h.html#a8c2b50801c5f3a8419ea00cec25dd6bb">verif</a></div><div class="ttdeci">int verif(Histo *historico, int histCount, char *noArquivo, int cond)</div><div class="ttdoc">Verifica a posição de um arquivo no vetor histórico.</div><div class="ttdef"><b>Definition:</b> SGAHeader.h:43</div></div>
+<div class="ttc" id="astructhisto_html_a6e27f49150e9a14580fb313cc2777e00"><div class="ttname"><a href="structhisto.html#a6e27f49150e9a14580fb313cc2777e00">histo::status</a></div><div class="ttdeci">int status</div><div class="ttdoc">Indica o estado atual do arquivo, se ainda está gravado ou foi removido.</div><div class="ttdef"><b>Definition:</b> SGAHeader.h:23</div></div>
+<div class="ttc" id="a_s_g_a_header_8h_html_aa59f6cf404d3f64b085df5eae7281781"><div class="ttname"><a href="_s_g_a_header_8h.html#aa59f6cf404d3f64b085df5eae7281781">Histo</a></div><div class="ttdeci">struct histo Histo</div><div class="ttdoc">Estrutura de uma posição de histórico de inserção e deleção de arquivos.</div></div>
+<div class="ttc" id="astructhisto_html"><div class="ttname"><a href="structhisto.html">histo</a></div><div class="ttdoc">Estrutura de uma posição de histórico de inserção e deleção de arquivos.</div><div class="ttdef"><b>Definition:</b> SGAHeader.h:20</div></div>
+<div class="ttc" id="astructparte_html_a89b05155f0f251df065b7f85ffd482b4"><div class="ttname"><a href="structparte.html#a89b05155f0f251df065b7f85ffd482b4">parte::prox</a></div><div class="ttdeci">int prox</div><div class="ttdoc">É a proxima posição da memória daquele arquivo, se -2 então é a ultima parte.</div><div class="ttdef"><b>Definition:</b> SGAHeader.h:11</div></div>
+<div class="ttc" id="a_s_g_a_header_8h_html_ab6872624832fe3d5c9bae8cf188c1fa4"><div class="ttname"><a href="_s_g_a_header_8h.html#ab6872624832fe3d5c9bae8cf188c1fa4">slot</a></div><div class="ttdeci">void slot(Histo *historico, int histCount, int posVet, Parte *vet)</div><div class="ttdoc">Verifica uma posição específica do vetor de partes.</div><div class="ttdef"><b>Definition:</b> SGAHeader.h:101</div></div>
+<div class="ttc" id="astructparte_html_a750b5d744c39a06bfb13e6eb010e35d0"><div class="ttname"><a href="structparte.html#a750b5d744c39a06bfb13e6eb010e35d0">parte::index</a></div><div class="ttdeci">int index</div><div class="ttdoc">É a posição inicial do arquivo daquela parte.</div><div class="ttdef"><b>Definition:</b> SGAHeader.h:14</div></div>
+<div class="ttc" id="a_s_g_a_header_8h_html_abe474b2931ee2935e4b3a9074ad11247"><div class="ttname"><a href="_s_g_a_header_8h.html#abe474b2931ee2935e4b3a9074ad11247">insere</a></div><div class="ttdeci">void insere(Histo *historico, Parte *vet, char *noArquivo, int posHist, FILE *arq)</div><div class="ttdoc">Insere um novo arquivo na memória do script.</div><div class="ttdef"><b>Definition:</b> SGAHeader.h:59</div></div>
+<div class="ttc" id="a_s_g_a_header_8h_html_a301aae3c3872a4c0e424d552e1f126a3"><div class="ttname"><a href="_s_g_a_header_8h.html#a301aae3c3872a4c0e424d552e1f126a3">busca</a></div><div class="ttdeci">void busca(Histo *historico, Parte *vet, char *noArquivo, int histCount)</div><div class="ttdoc">Busca um arquivo na memória pelo seu nome.</div><div class="ttdef"><b>Definition:</b> SGAHeader.h:74</div></div>
+<div class="ttc" id="a_s_g_a_header_8h_html_a08224f9c8c3cf12ddf40cbfc5fe0a568"><div class="ttname"><a href="_s_g_a_header_8h.html#a08224f9c8c3cf12ddf40cbfc5fe0a568">zera</a></div><div class="ttdeci">void zera(Histo *historico, Parte *vet)</div><div class="ttdoc">Zera o vetor de histórico e o vetor de partes.</div><div class="ttdef"><b>Definition:</b> SGAHeader.h:30</div></div>
+<div class="ttc" id="astructhisto_html_a737837a1c8550f0319ebb232e3813b38"><div class="ttname"><a href="structhisto.html#a737837a1c8550f0319ebb232e3813b38">histo::nomeAr</a></div><div class="ttdeci">char nomeAr[20]</div><div class="ttdoc">É o nome do arquivo salvo naquela posição de histórico.</div><div class="ttdef"><b>Definition:</b> SGAHeader.h:22</div></div>
+<div class="ttc" id="astructhisto_html_aeb5a293641a5914dcff4a1ca75870431"><div class="ttname"><a href="structhisto.html#aeb5a293641a5914dcff4a1ca75870431">histo::indice</a></div><div class="ttdeci">int indice</div><div class="ttdoc">Indica a primeira posição num vetor de partes daquele arquivo.</div><div class="ttdef"><b>Definition:</b> SGAHeader.h:21</div></div>
+<div class="ttc" id="a_s_g_a_header_8h_html_a8d27d99d4a1f8f20e75c9acfc8432352"><div class="ttname"><a href="_s_g_a_header_8h.html#a8d27d99d4a1f8f20e75c9acfc8432352">remocao</a></div><div class="ttdeci">void remocao(Histo *historico, Parte *vet, char *noArquivo, int histCount)</div><div class="ttdoc">Remove um arquivo do vetor de partes.</div><div class="ttdef"><b>Definition:</b> SGAHeader.h:89</div></div>
+<div class="ttc" id="astructparte_html_a737837a1c8550f0319ebb232e3813b38"><div class="ttname"><a href="structparte.html#a737837a1c8550f0319ebb232e3813b38">parte::nomeAr</a></div><div class="ttdeci">char nomeAr[20]</div><div class="ttdoc">É o nome do arquivo na qual aquela parte pertence.</div><div class="ttdef"><b>Definition:</b> SGAHeader.h:13</div></div>
+<div class="ttc" id="astructparte_html"><div class="ttname"><a href="structparte.html">parte</a></div><div class="ttdoc">Estrutura de uma parte da memória interna do programa.</div><div class="ttdef"><b>Definition:</b> SGAHeader.h:10</div></div>
+<div class="ttc" id="astructparte_html_ab13f950e8e17b3e09f6b2eab5d4f469b"><div class="ttname"><a href="structparte.html#ab13f950e8e17b3e09f6b2eab5d4f469b">parte::txt</a></div><div class="ttdeci">char txt[30]</div><div class="ttdoc">É a parte do texto salva naquela posição de memória.</div><div class="ttdef"><b>Definition:</b> SGAHeader.h:12</div></div>
+<div class="ttc" id="a_s_g_a_header_8h_html_a9a2fe278fb91f412ec1f155fa7e389cb"><div class="ttname"><a href="_s_g_a_header_8h.html#a9a2fe278fb91f412ec1f155fa7e389cb">Parte</a></div><div class="ttdeci">struct parte Parte</div><div class="ttdoc">Estrutura de uma parte da memória interna do programa.</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

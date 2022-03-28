@@ -1,0 +1,2 @@
+Estão disponibilizados alguns arquivos para testes na pasta "testes"
+O arquivo exemplo.txt é bem maior que os outros, portanto causará sobrecarga na memória se junto de alguns outros. Esta sobrecarga já é tratada. Mais informações nos comentários do código, documentação e relatório.

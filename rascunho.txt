@@ -1,0 +1,52 @@
+Introdução
+Gerenciamento (ou gestão) de memória é um complexo campo da ciência da computação e são constantemente desenvolvidas várias técnicas para torná-la mais eficiente. Em sua forma mais simples, está relacionado em duas tarefas essenciais:
+
+    Alocação: Quando o programa requisita um bloco de memória, o gerenciador o disponibiliza para a alocação;
+
+    Reciclagem: Quando um bloco de memória foi alocado, mas os dados não foram requisitados por um determinado número de ciclos ou não há nenhum tipo de referência a este bloco pelo programa, esse bloco é liberado e pode ser reutilizado para outra requisição.
+
+Um computador padrão, geralmente trabalha ativamente com 3 memórias: a memória de cache volátil, a memória principal volátil (RAM) e a memória física do sistema, mostradas aqui em ordem de velocidade e custo. Resumidamente, elas trabalham de forma semelhante, atribuindo, deletando e restringindo.
+
+Um sistema gerenciador de arquivos nada mais é que um programa que gerencia dados diversos na memória de uma máquina, faz sua alocação, deleção e busca. Sendo assim, este elemento é crucial para qualquer gravação ou inicialização de programas dentro do sistema. Um bom exemplo disso é o gerenciamento de memória feito pelo sistema operacional, que insere, deleta, e restringe arquivos à memória RAM a todo momento enquanto a máquina estiver funcionando.
+Para entendimento completo deste projeto, devem ser apresentados dois conceitos que foram utilizados como base para criação deste programa:
+
+	Tipos estruturados de dados
+		São estruturas de informações diversas podendo conter uma ou mais informação dentro de um mesmo dóminio, por exemplo uma gaveta de escritório, que pode conter itens diversos dentro dela. Os tipos mais comuns de estruturas de dados são: vetores, pilhas, filas, listas, deques e árvores
+
+	Estruturas lineares
+		São os métodos que caracterizam cada tipo de estrutura de dados. Por exemplo: uma pilha tendo o topo como começo, só pode inserir e remover itens do topo, faz analogia a uma pilha de livros, por exemplo.
+
+Metodologia
+
+Utilizando os itens descritos na introdução, foi cria o SGA (Sistema Gerenciador de Arquivos), nele é utilizado o sistema de inserção e deleção majoritariamente em deque, que significa inserção e deleção no final ou no inicio do vetor, sendo que, funcionando como uma memória, um arquivo pode ser gravado em posições não consecutivas uma da outra.
+
+Ele utiliza 2 vetores para realizar suas operações:
+	Vetor Histórico
+		Esse vetor armazena nomes e posições iniciais de cada arquivo inserido, assim como seu estado atual, se está na memória, já foi excluído, ou não existe. Atua como um guia para o vetor de partes.
+	Vetor de Partes
+		Esse vetor é onde fica armazenado o arquivo de fato, conterá o nome do arquivo, posições posteriores e a posição inicial do arquivo.
+
+As principais funções desse sistema são:
+	Armazenar arquivo:
+		Uma parte da memória é designada a guardar certo arquivo, se houver espaço suficiente e o arquivo já não esteja nesta memória
+
+	Deletar arquivo:
+		Remove indicações de um arquivo no vetor de partes, e altera seu estado para removido, no vetor de histórico.
+
+	Buscar arquivo:
+		Percorre o vetor de histórico para tentar encontrar um certo arquivo. Se encontrado, é mostrado quantos blocos de memória ocupados pelo arquivo no vetor de memória e quais são eles.
+
+	Descrever posição na memória de partes:
+		Dada uma posição inserida pelo usuário, retorna a ele se algum arquivo está utilizando aquela posição no vetor de partes, se aquela posição já foi utilizada e agora está vazia, ou nunca foi utilizada
+
+	Exemplos de Uso
+	Como esse sistema serve de base para muitos outros, sua implementação é diversa e bem-vinda em aplicações que precisam gerenciar memória. Este tipo de programa descrito aqui é frequentemente utilizado em softwares que demandam muita memória do sistema, como por exemplo jogos.
+
+	Alguns gerenciadores de memória física podem fazer uso de material semelhante para armazenar e descrever propriedades do arquivo para o usuário
+
+	Conclusão
+	Pode-se concluir que o gerenciamento de memória é um dos fatores que mais implicam no avanço de aplicações e hardwares, com um mau gerenciamento, dados podem ser perdidos ou inutilizados, e aplicações podem ficar lentas e travadas. A principal ideia do bom gerenciamento é a reutilização da própria memória, mas sem prejudicar nenhum programa ou arquivo do sistema.
+
+	
+
+
